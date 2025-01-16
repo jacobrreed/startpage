@@ -3,12 +3,12 @@
  **/
 
 :root {
-  --background: #09090b;
+  --background: #212337;
 
   /* colors are set in JS based on variant */
-  --primary: var(--background);
-  --secondary: var(--background);
-  --shade-color: var(--background);
+  --primary: #212337;
+  --secondary: #37f499;
+  --shade-color: #a48cf2;
 
   --text: hsl(from var(--primary) h s 90%);
   --text-gentle: hsla(from var(--primary) h s 80% / 70%);
@@ -25,7 +25,7 @@
  **/
 
 :root {
-  font-family: Quicksand, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 500;
 

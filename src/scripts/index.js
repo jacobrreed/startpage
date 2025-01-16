@@ -1,53 +1,40 @@
 import { injectBookmarks } from "./bookmarks.js"
-import { updateVariant } from "./variants.js"
 
 const bookmarks = [
   {
     label: "reddit",
     items: {
-      "r/startpages": "https://www.reddit.com/r/startpages",
+      "r/hyprland": "https://www.reddit.com/r/hyprland",
       "r/unixporn": "https://www.reddit.com/r/unixporn",
-      "r/webdev": "https://www.reddit.com/r/webdev",
-      "r/coolgithubprojects ": "https://www.reddit.com/r/coolgithubprojects ",
+      "r/linux_gaming": "https://www.reddit.com/r/linux_gaming",
+      "r/neovim ": "https://www.reddit.com/r/neovim ",
     },
   },
   {
-    label: "tools",
+    label: "github",
     items: {
-      "img > compress": "https://compressimage.io/",
-      "img > upscale": "https://bigjpg.com/",
-      "css > shadows": "https://www.joshwcomeau.com/shadow-palette/",
-      "js > bundlephobia": "https://bundlephobia.com/",
+      "dotfiles": "https://github.com/jacobrreed/dotfiles",
+      "nvim": "https://github.com/jacobrreed/nvim",
+      "eldritch": "https://github.com/eldritch-theme/eldritch",
     },
   },
   {
-    label: "libs",
+    label: "media",
     items: {
-      tailwind: "https://tailwindcss.com/docs/customizing-colors",
-      shadcn: "https://ui.shadcn.com/docs/components",
+      "YouTube Music": "https://music.youtube.com",
+      "YouTube": "https://youtube.com",
+      "Twitch": "https://twitch.tv",
     },
   },
   {
-    label: "ressources",
+    label: "homelab",
     items: {
-      "react > bulletproof": "https://github.com/alan2207/bulletproof-react",
-      "js > patterns": "https://www.patterns.dev/#patterns",
+      "homepage": "https://homepage.jacobrreed.io",
+      "Proxmox": "https://proxmox.jacobrreed.io",
+      "ESXI": "https://esxi.jacobrreed.io",
+      "Synology": "https://synology.jacobrreed.io:5001",
     },
   },
 ]
 
 injectBookmarks(bookmarks)
-
-// Select a random variant
-updateVariant()
-// Or set a static variant
-// updateVariant("momo-1")
-
-// For debugging
-/*
-function iterateVariants() {
-  updateVariant()
-  setTimeout(iterateVariants, 5000)
-}
-iterateVariants()
-*/

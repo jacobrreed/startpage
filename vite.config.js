@@ -1,6 +1,6 @@
 import { defineConfig } from "vite"
 
 export default defineConfig({
-  base: "/dandadan-startpage/",
+  base: "/startpage/",
   root: "./src"
 })

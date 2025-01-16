@@ -13,19 +13,6 @@ body {
   justify-content: center;
 }
 
-button#pin-action {
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  opacity: 0.5;
-  svg {
-    rotate: 30deg;
-  }
-  &:hover {
-    opacity: 1;
-  }
-}
-
 body>main {
   padding: 1rem 2rem 1rem 1rem;
   backdrop-filter: blur(4px);
@@ -77,7 +64,7 @@ main>h1 {
   text-decoration-thickness: 0.25rem;
   text-underline-offset: 0.5rem;
 
-  filter: drop-shadow(0.125rem 0 var(--secondary));
+  filter: drop-shadow(0.30rem 0 var(--secondary));
 }
 
 main>nav {
@@ -104,50 +91,14 @@ main>nav {
 
   a {
     position: relative;
-    color: transparent;
+    color: #04d1f9;
     margin: 0 -0.5rem;
     text-decoration: none;
     outline: none;
     border-radius: 0.125rem;
 
-    &, &::before, &::after {
-      display: inline-block;
-      max-width: 10rem;
-      padding: 0 0.5rem;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-
-    &::before, &::after {
-      content: attr(data-text);
-      color: var(--text);
-      position: absolute;
-      left: 0;
-      transition: 500ms cubic-bezier(0, 1, 0, 0.66);
-      transition-property: transform, color;
-    }
-    &::before {
-      clip-path: polygon(0% 0%, 100% 0%, 100% 55%, 0% 55%);
-    }
-    &::after {
-      clip-path: polygon(0% 55%, 100% 55%, 100% 100%, 0% 100%);
-    }
-
-
-    &:focus-visible {
-      outline: var(--focus-ring);
-    }
-
     &:hover, &:focus-visible {
-      &::before {
-        color: var(--secondary);
-        transform: translateX(0.25rem) skewX(-15deg);
-      }
-      &::after {
-        color: var(--secondary);
-        transform: translateX(-0.25rem) skewX(-15deg);
-      }
+     text-decoration: underline;
     }
   }
 }

@@ -59,12 +59,12 @@ main>h1 {
   letter-spacing: 0.5rem;
   line-height: 1;
 
-  color: var(--primary);
-  text-decoration: underline;
-  text-decoration-thickness: 0.25rem;
-  text-underline-offset: 0.5rem;
+  color: var(--secondary);
+  /* text-decoration: underline; */
+  /* text-decoration-thickness: 0.25rem; */
+  /* text-underline-offset: 0.5rem; */
 
-  filter: drop-shadow(0.30rem 0 var(--secondary));
+  /* filter: drop-shadow(0.30rem 0 var(--secondary)); */
 }
 
 main>nav {
